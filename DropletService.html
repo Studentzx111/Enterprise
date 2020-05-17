@@ -1,0 +1,132 @@
+<!--表示文档的类型-->
+<!DOCTYPE html>
+<!--标签：双标签/单标签-->
+<!--html组成：标签  属性-->
+<html lang="en">
+<head>
+    <!--                                   网页的宽度=设备的宽度-->
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <!--用来连接外部资源-->
+    <!--href 资源的相对路径-->
+    <!-- short icon 小图标-->
+    <link rel="short icon" href="Resource/icon.png">
+    <!--让某个外部样式表控制当前的Html-->
+    <link rel="stylesheet" href="ExternalStyle.css">
+
+    <title>赵欣</title>
+
+    <style>
+/*成行时，针对外部的大标签控制display:table,width限制它的高度*/
+        ul{
+            display: table;
+            width: 100%;
+            background: white;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+/*成列时，针对在成列（内部相对小的标签）的标签：display:table-cell*/
+        ul li{
+            display:table-cell;
+            width:33.3%;
+            text-align: center;
+            vertical-align: middle ;
+        }
+        /*让内联标签变成块级标签  可以独立成行*/
+        ul li span {
+            display: block;
+        }
+        footer{
+            background: black;
+            display: table;
+            width:100%;
+        }
+        footer a{
+            display:table-cell;
+            text-align: center;
+            vertical-align:middle;
+            width:20%;
+            text-decoration: none;
+        }
+        footer span {
+            display:block;
+            color: white;
+            font-size: 12px;
+        }
+        footer a img{
+         width: 18px;
+         color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<!--语义化标签 ：增强代码的可读性-->
+<!--第一部分-->
+<header>
+<!--是用来搬少量文字用的标签-->
+<span>小滴服务</span>
+</header>
+
+
+
+<!--第二部分-->
+<section class="DS_second_section">
+<!--用来加载图片的标签 src 相对路径  alt  警告 提示-->
+<img src="Resource/banner1.png" alt="哥 请检查你的手机网络">
+</section>
+
+<!--第三部分-->
+<section>
+    <!--ul li 属于无序列表标签-->
+    <ul>
+        <li><img src="Resource/index1.png" alt="">
+            <span>企业项目</span>
+        </li>
+        <li>   <img src="Resource/index2.png" alt="">
+            <span>平台风采</span>
+        </li>
+        <li>   <img src="Resource/index3.png" alt="">
+            <span>报名流程</span>
+        </li>
+    </ul>
+    <ul>
+        <li><img src="Resource/index4.png" alt="">
+            <span>客户管理</span>
+        </li>
+        <li>  <img src="Resource/index5.png" alt="">
+            <span>账务管理</span>
+        </li>
+        <li>   <img src="Resource/index6.png" alt="">
+            <span>新闻公告</span>
+        </li>
+    </ul>
+
+    <ul>
+        <li><img src="Resource/index7.png" alt="">
+            <span>工程案例</span>
+        </li>
+        <li>  <img src="Resource/index8.png" alt="">
+            <span>修改密码</span>
+        </li>
+        <li>   <img src="Resource/index9.png" alt="">
+            <span>会员注册</span>
+        </li>
+    </ul>
+
+</section>
+
+
+<!--第四部分-->
+<footer>
+    <a href=""><img src="Resource/nav11.png" alt=""><span class="DS_footer_span">小滴服务</span></a>
+    <a href="EnterpriseProject.html"><img src="Resource/nav20.png" alt=""><span>企业项目</span></a>
+    <a href="ServiceProcess.html"><img src="Resource/nav30.png" alt=""><span>服务流程</span></a>
+    <a href="PlatformPresence.html"><img src="Resource/nav40.png" alt=""><span>平台风采</span></a>
+    <a href="MyDroplet.html"><img src="Resource/nav50.png" alt=""><span>我的小滴</span></a>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(244,244,246);
+    padding-top: 84px;
+    padding-bottom: 49px;
+
+}
+
+/*定位： 固定定位  绝对定位
+*确定元素的位置（x,y）坐标
+*确定元素的宽高
+*加个螺丝钉
+*把被遮挡的部分露出来
+*/
+.EP_first_header{
+    background-color: rgb(40,133,202);
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+
+}
+footer{
+    height: 49px;
+
+    left:0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+/*100%  代表铺满整个屏幕*/
+
+.DS_footer_span{
+    color: red;
+}
+.EP_second_header {
+    display: table;
+    width: 100%;
+    background:rgb(244,244,246);
+    height:40px;
+    left: 0;
+    top: 44px;
+    position: fixed;
+
+}
+.EP_second_header a{
+    display: table-cell;
+    width: 33.3%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.EP_second_header span{
+    display: block;
+    color:black;
+}
+.EP_section_2 img{
+    width: 100%;
+}
+.EP_first_img{
+    width: 100%;
+}
+.EP_second_img{
+    width: 100%;
+}
+.EP_external_div span{
+    display: block;
+    text-align: center;
+    color: black;
+
+}
+.EP_external_div p{
+    color: gray;
+}
+.EP_inner_div{
+    background: white;
+}
+footer{
+    background: black;
+    display: table;
+    width:100%;
+}
+footer a{
+    display:table-cell;
+    text-align: center;
+    vertical-align:middle;
+    width:20%;
+    text-decoration: none;
+}
+footer span {
+    display:block;
+    color: white;
+    font-size: 12px;
+}
+footer a img{
+    width: 18px;
+    color: white;
+}
+p{
+    text-indent: 2em;
+    font-size:12px;
+    line-height:24px
+
+}
+.PP_first_head{
+    color: red;
+    border-bottom: 1px gray solid;
+    vertical-align:middle;
+}
